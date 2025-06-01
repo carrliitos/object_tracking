@@ -26,6 +26,51 @@ a future post, but in the meantime, take a look at Satya’s writeup. (minimum O
 
 ## Instructions
 
+1. If you haven’t already, clone the repository and navigate to the project folder:
+
 ```bash
-$ python main.py [-v VIDEO] [-t TRACKER]
+$ git clone git@github.com:carrliitos/object_tracking.git
+$ cd object_tracking/
+```
+
+2. Create and activate a Python virtual environment to isolate dependencies:
+
+```bash
+$ python -m venv venv
+$ source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
+3. Ensure all necessary packages are installed:
+
+```bash
+(venv) $ pip install -r requirements.txt
+```
+
+4. Execute the main script with optional arguments:
+
+```bash
+(venv) $ python main.py [-v VIDEO] [-t TRACKER]
+```
+
+* `-v VIDEO`: (Optional) Path to a video file. If omitted, the webcam will be used.
+* `-t TRACKER`: (Optional) Tracker type. Supported options include `csrt`, `kcf`, `mil`, `medianflow`, etc. Default is `csrt`.
+
+### Example Usage
+
+Run with webcam and default tracker:
+
+```bash
+(venv) $ python main.py
+```
+
+Run with video file and a specific tracker:
+
+```bash
+(venv) $ python main.py -v sample.mp4 -t kcf
+```
+
+5. When you're done:
+
+```bash
+(venv) $ deactivate
 ```

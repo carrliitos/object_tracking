@@ -23,3 +23,9 @@ tracker. (minimum OpenCV 3.0.0)
 files to run (will not be covered in this post). My initial experiments showed it was a bit of a pain to use even though 
 it reportedly handles viewing changes well (my initial experiments didn’t confirm this though). I’ll try to cover it in 
 a future post, but in the meantime, take a look at Satya’s writeup. (minimum OpenCV 3.2.0)
+
+## Instructions
+
+```bash
+$ python main.py [-v VIDEO] [-t TRACKER]
+```
